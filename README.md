@@ -8,4 +8,19 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 gem 'rails'
 $ bundle install --path vendor/bundle 
+$ bundle exec rails new .
+  :
+         run  bundle install
+/usr/bin/ruby2.1: No such file or directory -- /usr/lib/ruby/bin/bundle (LoadError)
+         run  bundle exec spring binstub --all
+/usr/bin/ruby2.1: No such file or directory -- /usr/lib/ruby/bin/bundle (LoadError)
 ```
+
+WTF?
+
+```
+$ bundle install
+$ bundle exec spring binstub --all
+$ rm README.rdoc
+```
+
