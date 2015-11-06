@@ -2,6 +2,7 @@
 I'm learning React following http://qiita.com/mmyoji/items/ce7fef70c0c91aca793b :)
 
 ## What I have done so far
+### Prepare rails
 ```
 $ cat Gemfile 
 source 'https://rubygems.org'
@@ -24,3 +25,9 @@ $ bundle exec spring binstub --all
 $ rm README.rdoc
 ```
 
+### Prepare react
+```
+$ vi Gemfile
+$ bundle install
+$ bundle exec rails g react:install
+```
