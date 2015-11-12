@@ -1,5 +1,7 @@
 # study-react-on-rails
-I'm learning React following http://qiita.com/mmyoji/items/ce7fef70c0c91aca793b :)
+I'm learning React following
+- http://qiita.com/mmyoji/items/ce7fef70c0c91aca793b and
+- http://facebook.github.io/react/docs/tutorial.html
 
 ## What I have done so far
 ### Prepare rails
