@@ -3,8 +3,8 @@ var CommentBox = React.createClass({
     return (
       <div className="commentBox">
         <h2>Comments</h2>
-	<CommentList />
-	<CommentForm />
+        <CommentList />
+        <CommentForm />
       </div>
     );
   }
