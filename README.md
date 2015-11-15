@@ -1,9 +1,10 @@
 # study-react-on-rails
-I'm learning React following
+I leant React following
 - http://qiita.com/mmyoji/items/ce7fef70c0c91aca793b and
 - http://facebook.github.io/react/docs/tutorial.html
+Was fun :)
 
-## What I have done so far
+## What I have done
 ### Prepare rails
 ```
 $ cat Gemfile
@@ -42,3 +43,11 @@ $ bundle exec rails g react:component Sample
 $ vi app/assets/javascripts/components/sample.js.jsx
 $ bundle exec rails s
 ```
+
+### Create endpoint for Comments
+```
+$ bundle exec rails g scaffold Comment author:string text:text
+$ bundle exec rake db:migrate
+$ bundle exec rake db:seed
+```
+
