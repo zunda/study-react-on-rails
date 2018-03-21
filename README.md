@@ -51,3 +51,5 @@ $ bundle exec rake db:migrate
 $ bundle exec rake db:seed
 ```
 
+### See it working
+http://localhost:3000/dashboard/index
