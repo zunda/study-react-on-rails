@@ -53,3 +53,15 @@ $ bundle exec rake db:seed
 
 ### See it working
 http://localhost:3000/dashboard/index
+
+## Update rails
+```
+$ bundle install --path=vendor/bundle
+$ vi Gemfile
+$ bundle update rails
+$ bundle exec rake test
+$ vi Gemfile
+$ bundle install
+```
+
+Edit files to silence warnings.
