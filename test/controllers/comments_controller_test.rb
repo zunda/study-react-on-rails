@@ -18,30 +18,30 @@ class CommentsControllerTest < ActionController::TestCase
 
   test "should create comment" do
     assert_difference('Comment.count') do
-      post :create, comment: { author: @comment.author, text: @comment.text }
+      post :create, params: { comment: { author: @comment.author, text: @comment.text } }
     end
 
     assert_redirected_to comment_path(assigns(:comment))
   end
 
   test "should show comment" do
-    get :show, id: @comment
+    get :show, params: { id: @comment }
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @comment
+    get :edit, params: { id: @comment }
     assert_response :success
   end
 
   test "should update comment" do
-    patch :update, id: @comment, comment: { author: @comment.author, text: @comment.text }
+    patch :update, params: { id: @comment, comment: { author: @comment.author, text: @comment.text } }
     assert_redirected_to comment_path(assigns(:comment))
   end
 
   test "should destroy comment" do
     assert_difference('Comment.count', -1) do
-      delete :destroy, id: @comment
+      delete :destroy, params: { id: @comment }
     end
 
     assert_redirected_to comments_path

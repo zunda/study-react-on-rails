@@ -63,3 +63,5 @@ $ bundle exec rake test
 $ vi Gemfile
 $ bundle install
 ```
+
+Edit files to silence warnings.
